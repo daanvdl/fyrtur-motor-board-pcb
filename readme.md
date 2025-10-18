@@ -18,7 +18,7 @@ This work was inspired by two excellent community projects:
 
 - **Riesinger’s custom firmware research**
    https://riesinger.dev/posts/silencing-fyrtur-blinds-with-custom-firmware/
-   → → This was the *first detailed article* I came across showing how mjuhanne’s custom firmware was successfully applied to the IKEA Fyrtur blinds.
+   →  This was the first detailed article I came across showing how mjuhanne’s custom firmware was successfully applied to the IKEA Fyrtur blinds.
 - **mjuhanne’s open hardware design**
    https://github.com/mjuhanne/fyrtur-motor-board
    → The foundation and inspiration for my own schematic improvements and hardware layout.
