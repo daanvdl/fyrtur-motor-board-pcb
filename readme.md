@@ -29,11 +29,9 @@ This work was inspired by two excellent community projects:
 
 Compared to mjuhanne’s schematic, several design improvements were implemented to enhance reliability and compatibility:
 
-- Refined power regulation and protection circuitry
-- Adjusted pin routing for a perfect mechanical fit
-- Corrected transistor orientation and net labels
-- Updated footprints to align with JLCPCB fabrication standards
+- Removed unnecessary parts
 - Cleaned silkscreen layout and labeling for easier assembly
+- Added silkscreen labeling for reprogramming
 
 The updated and verified schematic is included in this repository.
 
@@ -60,11 +58,9 @@ The updated and verified schematic is included in this repository.
 
 ## 🔧 Soldering
 
-This project requires SMD soldering skills.
-The board is hardwired at IO2, which connects to the ZigBee button board.
+This project requires SMD soldering skills. Hand soldering is possible, but using hot-air reflow is recommended for best results.
+The board is hardwired at IO2, which connects to the ZigBee button board. The RED labeled wire is RX0.
 The motor itself connects via the standard motor connector, just like the original board.
-
-Hand soldering is possible, but using hot-air reflow is recommended for best results.
 
 ------
 
