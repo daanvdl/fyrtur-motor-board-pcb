@@ -5,6 +5,8 @@ After some investigation, I discovered that the *motor itself* is perfectly fine
 
 This project is a reverse-engineered replica of the original Fyrtur motorboard: a drop-in replacement designed to bring your blinds back to life.
 
+<img src="Images\fyrtur.webp" style="zoom: 25%;" />
+
 ## ✳️ Motivation
 
 After multiple failures, it became clear that the Fyrtur’s weakest point is the control electronics, not the mechanics or the motor.
