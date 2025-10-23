@@ -18,22 +18,22 @@ I wanted a way to repair and reuse the blinds without relying on scarce or unrel
 
 This work was inspired by two excellent community projects:
 
-- **Riesinger’s custom firmware research**
-   https://riesinger.dev/posts/silencing-fyrtur-blinds-with-custom-firmware/
+- https://riesinger.dev/posts/silencing-fyrtur-blinds-with-custom-firmware/
    →  This was the first detailed article I came across showing how mjuhanne’s custom firmware was successfully applied to the IKEA Fyrtur blinds.
-- **mjuhanne’s open hardware design**
-   https://github.com/mjuhanne/fyrtur-motor-board
+- https://github.com/mjuhanne/fyrtur-motor-board
    → The foundation and inspiration for my own schematic improvements and hardware layout.
 
 ------
 
 ## 🧩 Improvements over the original design
 
-Compared to mjuhanne’s schematic, several design improvements were implemented to enhance reliability and compatibility:
+Several design improvements were implemented to enhance the board:
 
-- Removed unnecessary parts
+- Removed unnecessary parts and improved tracing
 - Cleaned silkscreen layout and labeling for easier assembly
 - Added silkscreen labeling for reprogramming
+- Wider IO2 pads to make wire soldering less painful
+- Added TX/RX 2.54mm header possibility for troubleshooting
 
 The updated and verified schematic is included in this repository.
 
@@ -62,16 +62,16 @@ The updated and verified schematic is included in this repository.
 
 This project requires SMD soldering skills. Hand soldering is possible, but using hot-air reflow is recommended for best results.
 The board is hardwired at IO2, which connects to the ZigBee button board. The RED labeled wire is RX0.
-The motor itself connects via the standard motor connector, just like the original board.
+The motor connects via the motor connector, just like the original board.
 
 ------
 
 ## 🧱 Gerber
 
 - **Board thickness:** 1.6 mm
-- **Surface finish:** HASL is sufficient, but **ENIG** withstands more heat during manual soldering.
+- **Surface finish:** HASL is sufficient, but ENIG withstands more heat during manual soldering.
 - **Manufacturer:** JLCPCB (personally tested and verified)
-- Other PCB manufacturers should also work fine using the included Gerbers.
+- Other PCB manufacturers should also work fine using the included Gerber.
 
 ------
 
@@ -96,8 +96,7 @@ The schematic is based on mjuhanne’s version, extended with the missing and co
 This project includes the **original IKEA firmware**, located in the `Firmware/` directory.
 It allows the board to function identically to the factory version.
 
-For those interested in **enhanced and modified firmware**, including versions that make the blinds **operate completely silently**, please refer to the excellent work by
- 👉 [mjuhanne’s Fyrtur Motor Board repository](https://github.com/mjuhanne/fyrtur-motor-board).
+For those interested in **enhanced and modified firmware**, including versions that make the blinds **operate almost silently**, please refer to the excellent work by [mjuhanne’s Fyrtur Motor Board repository](https://github.com/mjuhanne/fyrtur-motor-board).
 
 ------
 
@@ -122,5 +121,4 @@ Shared in the hope that it helps others revive their Fyrtur blinds instead of th
 
 ## 📜 License
 
-Open-source hardware. See `LICENSE` for details.
-You are free to reuse, modify, and improve — please credit the original authors and references.
+Open-source hardware. You are free to reuse, modify, and improve — please credit the original authors and references.
